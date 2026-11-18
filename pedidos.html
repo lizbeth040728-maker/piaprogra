@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khanom bakery, pastelería artesanal.">
+  <title>Khanom bakery | Pedidos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloock&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="franja-superior">
+    <div class="franja-superior-recorrido">
+      <div class="franja-superior-grupo"><span>PASTELERÍA ARTESANAL ✳</span><span>HECHO CON CALMA, HECHO CON AMOR ✳</span></div>
+      <div class="franja-superior-grupo" aria-hidden="true"><span>PASTELERÍA ARTESANAL ✳</span><span>HECHO CON CALMA, HECHO CON AMOR ✳</span></div>
+    </div>
+  </div>
+  <header class="encabezado-sitio">
+    <a class="logotipo" href="index.html" aria-label="Khanom bakery, Nosotros">khanom <b>bakery</b><i>✳</i></a>
+    <button class="boton-navegacion" type="button" aria-label="Abrir navegación" aria-expanded="false">☰</button>
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a href="index.html" class="">Nosotros</a>
+      <a href="menu.html" class="">Menú</a>
+      <a href="pedidos.html" class="activo">Pedidos</a>
+    </nav>
+  </header>
+
+<main>
+  <section class="portada-pedidos seccion-pantalla" id="introduccion-pedidos">
+    <div><p class="antetitulo">ALGO DELICIOSO ESTÁ POR EMPEZAR</p><h1>Tu próxima ocasión<br><em>merece algo dulce.</em></h1><p>Comparte con nosotros los detalles y prepararemos una propuesta para tu antojo.</p></div>
+  </section>
+
+  <section class="proceso-pedido seccion-pantalla" id="como-pedir">
+    <p class="antetitulo">01 / ¿CÓMO HACER TU PEDIDO?</p>
+    <h2>Es más sencillo<br><em>de lo que imaginas.</em></h2>
+    <div class="pasos">
+      <article><span>01</span><h3>Cuéntanos tu idea</h3><p>Elige el tipo de producto y describe lo que tienes en mente.</p></article>
+      <article><span>02</span><h3>Revisamos los detalles</h3><p>Tomamos nota de la fecha, el sabor y la cantidad que necesitas.</p></article>
+      <article><span>03</span><h3>Preparamos tu pedido</h3><p>Coordinamos los detalles para que tu postre esté listo.</p></article>
+    </div>
+  </section>
+
+  <section class="seccion-formulario-pedido seccion-pantalla" id="formulario">
+    <div class="introduccion-formulario"><p class="antetitulo">02 / FORMULARIO</p><h2>Hagamos tu idea<br><em>realidad.</em></h2><p>Completa los siguientes datos.</p><div class="nota-formulario">UN DETALLE HECHO<br>ESPECIALMENTE PARA TI</div></div>
+    <form class="formulario-pedido" id="formularioPedido">
+      <label>Nombre completo *<input type="text" name="nombre" placeholder="Escribe tu nombre" required></label>
+      <label>Correo electrónico *<input type="email" name="correo" placeholder="nombre@correo.com" required></label>
+      <div class="fila-formulario">
+        <label>Producto *<select name="producto" required><option value="">Selecciona</option><option>Pastel</option><option>Cheesecake</option><option>Postres individuales</option><option>Galletas</option><option>Pedido personalizado</option></select></label>
+        <label>Fecha deseada *<input type="date" name="fecha" required></label>
+      </div>
+      <label>Detalles de tu pedido<textarea name="detalles" rows="4" placeholder="Sabor, tamaño, cantidad, decoración..."></textarea></label>
+      <button class="enlace-pildora boton-formulario" type="submit">Enviar solicitud <span>↗</span></button>
+      <p class="mensaje-formulario" id="mensajeFormulario" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section class="cierre-pedido seccion-pantalla" id="gracias">
+    <p class="antetitulo">03 / GRACIAS POR ELEGIRNOS</p>
+    <h2>Los momentos dulces<br><em>se hacen en compañía.</em></h2>
+    <a class="enlace-pildora enlace-oscuro" href="menu.html">Volver al menú <span>↗</span></a>
+  </section>
+</main>
+<footer class="pie-pagina">
+  <div class="contenido-pie">
+
+    <div class="columna-pie">
+      <h3>KHANOM BAKERY</h3>
+      <a href="index.html">Nuestra historia</a>
+      <a href="menu.html">Menú de postres</a>
+      <a href="pedidos.html">Pedidos especiales</a>
+    </div>
+
+    <div class="columna-pie">
+      <h3>CONTACTO</h3>
+      <a href="mailto:hola@khanombakery.com">Correo electrónico</a>
+      <a href="https://wa.me/5210000000000">WhatsApp</a>
+    </div>
+
+    <div class="columna-pie">
+      <h3>INFORMACIÓN</h3>
+      <a href="pedidos.html">Preguntas frecuentes</a>
+      <a href="#">Aviso de privacidad</a>
+      <a href="#">Términos y condiciones</a>
+    </div>
+
+    <div class="columna-pie">
+      <h3>SÍGUENOS</h3>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+    </div>
+
+  </div>
+
+  <div class="parte-inferior-pie">
+    <span>khanom bakery</span>
+    <p>© 2026 Khanom bakery. Todos los derechos reservados.</p>
+    <span>Hecho con calma, hecho con amor.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
